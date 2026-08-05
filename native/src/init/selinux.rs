@@ -92,12 +92,12 @@ impl MagiskInit {
         let mut rules = String::new();
         let mut policy_ver = cstr!("/selinux_version");
         let rule_file = cstr!(concatcp!("/data/", PREINITMIRR, "/sepolicy.rule"));
-        if rule_file.exists() {
-            debug!("Loading custom sepolicy patch: [{}]", rule_file);
-            rule_file
-                .open(OFlag::O_RDONLY)?
-                .read_to_string(&mut rules)?;
-        }
+        // if rule_file.exists() {
+        //     debug!("Loading custom sepolicy patch: [{}]", rule_file);
+        //     rule_file
+        //         .open(OFlag::O_RDONLY)?
+        //         .read_to_string(&mut rules)?;
+        // }
 
         // Step 0: determine strategy
 
