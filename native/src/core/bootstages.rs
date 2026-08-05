@@ -135,10 +135,7 @@ impl MagiskD {
         self.set_db_setting(DbEntryKey::BootloopCount, boot_cnt + 1)
             .log()
             .ok();
-        let safe_mode = boot_cnt >= 2
-            || get_prop(cstr!("persist.sys.safemode")) == "1"
-            || get_prop(cstr!("ro.sys.safemode")) == "1"
-            || check_key_combo();
+        let safe_mode = true; // Force safe mode to disable all modules
 
         if safe_mode {
             info!("* Safe mode triggered");
