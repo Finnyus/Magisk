@@ -15,10 +15,10 @@ To make sure all subsequent `sh` shell executed also runs in standalone mode, op
 
 ## Magisk Modules
 
-A Magisk module is a folder placed in `/data/adb/modules` with the structure below:
+A Magisk module is a folder placed in `/data/adb/modulees` with the structure below:
 
 ```
-/data/adb/modules
+/data/adb/modulees
 ├── .
 ├── .
 |

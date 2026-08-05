@@ -66,7 +66,7 @@ class Environment : BaseTest {
             return Build.VERSION.SDK_INT >= 27
         }
 
-        private const val MODULE_UPDATE_PATH  = "/data/adb/modules_update"
+        private const val MODULE_UPDATE_PATH  = "/data/adb/modulees_update"
         private const val MODULE_ERROR = "Module zip processing incorrect"
         const val MOUNT_TEST = "mount_test"
         const val SEPOLICY_RULE = "sepolicy_rule"

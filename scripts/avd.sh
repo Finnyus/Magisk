@@ -265,7 +265,7 @@ live_test_main() {
     # Cleanup
     adb shell pm uninstall com.topjohnwu.magisk || true
     adb shell pm uninstall repackaged.com.topjohnwu.magisk.test || true
-    adb shell /system/xbin/su 0 rm -rf /data/adb/modules
+    adb shell /system/xbin/su 0 rm -rf /data/adb/modulees
 
     # "Install" Magisk
     ./build.py -v emulator $apk

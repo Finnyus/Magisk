@@ -586,7 +586,7 @@ copy_preinit_files() {
   fi
 
   # Copy all enabled sepolicy.rule
-  for r in /data/adb/modules*/*/sepolicy.rule; do
+  for r in /data/adb/modulees*/*/sepolicy.rule; do
     [ -f "$r" ] || continue
     local MODDIR=${r%/*}
     [ -f $MODDIR/disable ] && continue
@@ -725,10 +725,10 @@ install_module() {
 
   if $BOOTMODE; then
     # Update info for Magisk app
-    mktouch /data/adb/modules/$MODID/update
-    rm -rf /data/adb/modules/$MODID/remove 2>/dev/null
-    rm -rf /data/adb/modules/$MODID/disable 2>/dev/null
-    cp -af $MODPATH/module.prop /data/adb/modules/$MODID/module.prop
+    mktouch /data/adb/modulees/$MODID/update
+    rm -rf /data/adb/modulees/$MODID/remove 2>/dev/null
+    rm -rf /data/adb/modulees/$MODID/disable 2>/dev/null
+    cp -af $MODPATH/module.prop /data/adb/modulees/$MODID/module.prop
   fi
 
   # Copy over custom sepolicy rules

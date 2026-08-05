@@ -144,7 +144,7 @@ impl ModulePaths<'_> {
         self.real.path
     }
 
-    // Returns "/data/adb/modules/{module}/system/bin"
+    // Returns "/data/adb/modulees/{module}/system/bin"
     fn module(&self) -> &Utf8CStr {
         self.module.path
     }

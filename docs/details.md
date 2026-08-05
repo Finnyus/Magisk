@@ -17,7 +17,7 @@ MAGISKTMP=$(magisk --path)
 # Magisk internal stuffs
 INTERNALDIR=$MAGISKTMP/.magisk
 
-# /data/adb/modules will be bind mounted here.
+# /data/adb/modulees will be bind mounted here.
 # The original folder is not used due to nosuid mount flag.
 $INTERNALDIR/modules
 

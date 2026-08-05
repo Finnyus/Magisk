@@ -43,7 +43,7 @@ class ActionViewModel : BaseViewModel() {
             val success = withContext(Dispatchers.IO) {
                 runSuCommand(
                     emu,
-                    "cd /data/adb/modules/$actionId && sh ./action.sh"
+                    "cd /data/adb/modulees/$actionId && sh ./action.sh"
                 )
             }
 

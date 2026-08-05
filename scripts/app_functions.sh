@@ -180,7 +180,7 @@ printvar() {
 
 run_action() {
   local MODID="$1"
-  cd "/data/adb/modules/$MODID"
+  cd "/data/adb/modulees/$MODID"
   sh ./action.sh
   local RES=$?
   cd /
